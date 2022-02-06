@@ -5,6 +5,9 @@ import { BsInfoCircle } from "react-icons/bs";
 
 import { Loader } from "./";
 
+const commonStyles =
+  "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
+
 const Welcome = () => {
   const connectWallet = () => {};
   return (
@@ -18,6 +21,7 @@ const Welcome = () => {
             Explora el mundo crypto con dunacrypto. Realiza tus transacciones de
             compra y venta manera segura y fácil.
           </p>
+          {/* Buttom */}
           <button
             type="button"
             onClick={connectWallet}
@@ -27,6 +31,16 @@ const Welcome = () => {
               Conectar Billetera
             </p>
           </button>
+
+          {/* Table */}
+          <div className="grid w-full grid-cols-2 mt-10 sm:grid-cols-3">
+            <div className={`rounded-tl-2xl ${commonStyles}`}>Fiabilidad</div>
+            <div className={`${commonStyles}`}>Seguridad</div>
+            <div className={`rounded-tr-2xl ${commonStyles}`}>Ethereum</div>
+            <div className={`rounded-bl-2xl ${commonStyles}`}>Rápido</div>
+            <div className={`${commonStyles}`}>Seguridad</div>
+            <div className={`rounded-br-2xl ${commonStyles}`}>Blockchain</div>
+          </div>
         </div>
       </div>
     </div>
