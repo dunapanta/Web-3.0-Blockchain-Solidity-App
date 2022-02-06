@@ -42,6 +42,29 @@ const Welcome = () => {
             <div className={`rounded-br-2xl ${commonStyles}`}>Blockchain</div>
           </div>
         </div>
+
+        {/* Card */}
+        <div className="flex flex-col items-center justify-start flex-1 w-full mt-10 md:mt-0">
+          <div className="flex-col items-start justify-end w-full h-40 p-3 my-5 rounded-xl sm:w-72 eth-card white-glassmorpism">
+            <div className="flex flex-col justify-between w-full h-full">
+              <div className="flex items-start justify-between">
+                <div className="flex items-center justify-center w-10 h-10 border-2 border-white rounded-full">
+                  <SiEthereum fontSize={21} color="#fff" />
+                </div>
+                <BsInfoCircle fontSize={17} color="#fff" />
+              </div>
+              <div>
+                {/* Addres Blockchain Wallet */}
+                <p className="text-sm font-light text-white">
+                  0xxfgfdd....dsfsdfs
+                </p>
+                <p className="mt-1 text-sm text-lg font-semibold text-white">
+                  Ethereum
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
