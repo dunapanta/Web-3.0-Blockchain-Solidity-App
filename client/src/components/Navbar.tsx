@@ -19,10 +19,10 @@ const NavbarItem = ({ title, classProps }: NavbarProps) => {
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between w-full p-4 ">
+    <nav className="items-center w-full p-4 ">
       <div
         //className="flex-row md:flex-[0.5] flex-initial justify-center items-center"
-        className="flex flex-row items-center justify-center flex-initial space-x-12"
+        className="flex flex-row items-center justify-center flex-initial space-x-20"
       >
         <div className="flex items-center">
           <Link href="/">
