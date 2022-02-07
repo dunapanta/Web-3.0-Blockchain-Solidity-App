@@ -5,11 +5,37 @@ import { BsInfoCircle } from "react-icons/bs";
 
 import { Loader } from "./";
 
+interface InputProps {
+  placeholder: string;
+  name: string;
+  type: "text" | "number" | "password";
+  value: string;
+  handleChange: (str: string) => void;
+}
+
 const commonStyles =
   "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
+const Input = ({
+  placeholder,
+  name,
+  value,
+  type,
+  handleChange,
+}: InputProps) => (
+  <input
+    placeholder={placeholder}
+    type={type}
+    step="0.0001"
+    value={value}
+    onChange={(e) => handleChange(e.target.value)}
+    className="w-full h-10 p-2 my-2 border-2 border-gray-400 rounded-lg"
+  />
+);
+
 const Welcome = () => {
   const connectWallet = () => {};
+  const handleSubmit = () => {};
   return (
     <div className="flex items-center justify-center w-full">
       <div className="flex flex-col items-start justify-between px-4 py-12 md:flex-row md:p-20">
@@ -63,6 +89,51 @@ const Welcome = () => {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* Form */}
+          <div className="flex flex-col items-center justify-start w-full p-5 sm:w-96 blue-glassmorphism">
+            <Input
+              placeholder="Enviar a"
+              name="addressTo"
+              type="text"
+              value={""}
+              handleChange={() => {}}
+            />
+            <Input
+              placeholder="Cantidad (ETH)"
+              name="amount"
+              type="number"
+              value={""}
+              handleChange={() => {}}
+            />
+            <Input
+              placeholder="Keyword (Gif)"
+              name="keyword"
+              type="text"
+              value={""}
+              handleChange={() => {}}
+            />
+            <Input
+              placeholder="Mensaje"
+              name="mesage"
+              type="text"
+              value={""}
+              handleChange={() => {}}
+            />
+
+            <div className="h-[1px] w-full bg-gray-400 my-2" />
+            {false ? (
+              <Loader />
+            ) : (
+              <button
+                type="button"
+                onClick={handleSubmit}
+                className="text-white w-full mt-2 border-[1px] p-2 border-[33d4f88] rounded-full cursor-pointer"
+              >
+                Enviar ahora
+              </button>
+            )}
           </div>
         </div>
       </div>
