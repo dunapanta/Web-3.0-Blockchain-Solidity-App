@@ -38,8 +38,8 @@ const Welcome = () => {
   const handleSubmit = () => {};
   return (
     <div className="flex items-center justify-center w-full">
-      <div className="flex flex-col items-start justify-between px-4 py-12 md:flex-row md:p-20">
-        <div className="flex flex-col justify-start flex-1 md:mr-10">
+      <div className="flex flex-col items-start justify-between px-4 py-12 mf:flex-row md:p-20">
+        <div className="flex flex-col justify-start flex-1 mf:mr-10">
           <h1 className="py-1 text-3xl text-white sm:text-5xl text-gradient">
             Enviar Crypto <br /> alrededor del mundo
           </h1>
@@ -70,7 +70,7 @@ const Welcome = () => {
         </div>
 
         {/* Card */}
-        <div className="flex flex-col items-center justify-start flex-1 w-full mt-10 md:mt-0">
+        <div className="flex flex-col items-center justify-start flex-1 w-full mt-10 mf:mt-0">
           <div className="flex-col items-start justify-end w-full h-40 p-3 my-5 rounded-xl sm:w-72 eth-card white-glassmorpism">
             <div className="flex flex-col justify-between w-full h-full">
               <div className="flex items-start justify-between">
