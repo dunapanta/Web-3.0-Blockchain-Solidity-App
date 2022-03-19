@@ -1,6 +1,6 @@
 //SPDX-License-Identifier: UNLICENSED
 //Vesion of solidity
-pragma solidity ^0.8.8;
+pragma solidity ^0.8.0;
 
 //Create a contract
 contract Transactions {
@@ -35,8 +35,6 @@ contract Transactions {
 
     function getTransactionCount() public view returns (uint256) {
         return transactionCount;
-    
-
     }
 
 }
